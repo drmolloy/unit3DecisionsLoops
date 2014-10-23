@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class CircleOverlap
 {
    public static void main(String[] args)
@@ -13,9 +14,18 @@ public class CircleOverlap
       double xcenter2 = 40;
       double ycenter2 = 0;
       
-      if ((radius1 + radius2).equals(40))
+      double total = radius1 + radius2;
+      if (total > 40)
+      {
+          System.out.println("They are overlapping");
+      }
+      if (total < 40)
       {
           System.out.println("They are disjoint");
+      }
+       if (total == 40)
+      {
+          System.out.println("They are tangent");
       }
    }
 }
